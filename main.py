@@ -54,6 +54,3 @@ def process_query():
     
     responses = get_responses(user_query, top_n=5)
     return jsonify({"responses": responses})
-
-if __name__ == '__main__':
-    app.run(debug=True)
